@@ -521,7 +521,10 @@ p{
 .section-footer .footer-icon:active{
     color: var(--white);
 }
-
+.footer-tail .social-icons{
+    display: flex;
+    gap: 2rem;
+}
 
 /* ******* top scrool btn ****** */
 
@@ -543,13 +546,23 @@ p{
     cursor: pointer;
 }
 
-
-
-.mobile-social-icon{
-    display: none;
+/* ********* portfolio section ********* */
+.portfolio{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
 }
-
-
+.portfolio h4{
+    font-size: 10rem;
+    font-family: 'Poppins', sans-serif;
+}
+.portfolio p{
+    font-size: 3rem;
+    font-family: 'Poppins', sans-serif;
+}
 
 /* ************** media query ************ */
 
@@ -610,7 +623,7 @@ p{
 
     .header{
         position: fixed;
-        /* gap: 30rem; */
+        gap: 30%;
     }
     .mobile-navbar-btn{
         display: block;
@@ -691,13 +704,18 @@ p{
         height: 80%;
         margin-top: -5%;
     }
+
+
 }
 
 
-/* 800px */
+/* 810px */
 @media (max-width: 810px){
     .container{
         max-width: 70rem;
+    }
+    .header{
+        gap: 25%;
     }
     .grid-two-column{
         grid-template-columns: 1fr;
@@ -745,6 +763,9 @@ p{
 }
 /* 460px */
 @media (max-width: 460px) {
+    .header{
+        gap: 20%;
+    }
     .my-pic{
         width: 30rem;
         height: 30rem;
