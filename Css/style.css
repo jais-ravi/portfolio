@@ -695,7 +695,7 @@ p{
 
 
 /* 800px */
-@media (max-width: 800px){
+@media (max-width: 810px){
     .container{
         max-width: 70rem;
     }
