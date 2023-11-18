@@ -671,7 +671,7 @@ p{
 
 /* 950px */
 
-@media (max-width: 950px) {
+/* @media (max-width: 950px) {
     html{
         font-size: 45%;
     }
@@ -681,7 +681,7 @@ p{
         /* margin-top: -5%; */
     }
     
-}
+} */
 
 /* 800px */
 @media (max-width: 800px){
