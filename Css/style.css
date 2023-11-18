@@ -596,7 +596,9 @@ p{
     html{
         font-size: 50%;
     }
-    
+    .container{
+        max-width: 100rem;
+    }
 
     .header{
         position: fixed;
