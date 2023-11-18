@@ -93,6 +93,9 @@ p{
 .grid-four-column{
     grid-template-columns: repeat(4, 1fr) ;
 }
+.grid-five-column{
+    grid-template-columns: repeat(5, 1fr) ;
+}
 .para{
     max-width: 70rem;
     font-family: 'Poppins', sans-serif;
@@ -120,6 +123,7 @@ p{
         color: var(--helper);
     }
 }
+
 
 /* ************ header section ************* */
 
@@ -205,6 +209,7 @@ p{
 .hero-section-images{
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 /* ******* About Me Section ******** */
 .section-about{
@@ -213,7 +218,6 @@ p{
 .tag-line{
     width: 50rem;
 }
-
 .i-logo:hover{
     color: var(--helper);
 }
@@ -258,17 +262,22 @@ p{
 }
 .social-icons{
     display: flex;
-    gap: 3rem;
+    flex-direction: row;
+    gap: 2rem;
     margin-top: 3rem;
 }
 .connect-me-data{
     display: flex;
     justify-content: space-between;
 }
+.connect-me-data .grid{
+    gap: 2rem;
+}
 
 /* ********* Service Section ******** */
 .section-services{
     background-color: var(--bg);
+    
 }
 .service-head{
     align-items: center;
@@ -667,6 +676,33 @@ p{
     .active .mobile-navbar-btn .mobile-nav-icon[name="close-outline"]{
         display: block;
     }
+    .btns{
+        flex-direction: column;
+        align-items: center;
+    }
+    .section-hero-data{
+        text-align: center;
+    }
+    .section-about .grid-two-column{
+        grid-template-columns: 1fr;
+    }
+    .section-about-data{
+        /* display: flex; */
+        align-items: center;
+        /* justify-content: center; */
+        text-align: center;
+    }
+    .connect-me-data{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .f-tail{
+        width: 80%;
+        height: 80%;
+        margin-top: -5%;
+    }
 }
 
 /* 950px */
@@ -675,18 +711,17 @@ p{
     html{
         font-size: 45%;
     }
-    .f-tail{
-        width: 80%;
-        height: 80%;
-        /* margin-top: -5%; */
+    .container{
+        max-width: 90rem;
     }
+    
     
 } */
 
 /* 800px */
 @media (max-width: 800px){
     .container{
-        max-width: 71rem;
+        max-width: 70rem;
     }
     .grid-two-column{
         grid-template-columns: 1fr;
@@ -700,18 +735,7 @@ p{
     .hero-para{
         text-align: center;
     }
-    .section-about-data{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    }
-    .connect-me-data{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    }
+    
     
     .section-footer .grid-four-column{
         grid-template-columns: 1fr 1fr;
@@ -727,11 +751,20 @@ p{
     }
 }
 
+/* @media (max-width: 890px) {
+    .section-about{
+        max-width: 90%;
+    }
+} */
+
 /* 560px */
 @media (max-width : 560px) {
     html{
         font-size: 42%;
     }
+    /* .container{
+        max-width: 50rem;
+    } */
     
     .section-services .grid-four-column{
         grid-template-columns:  1fr;
@@ -744,9 +777,9 @@ p{
     }
 }
 /* 370px */
-@media (max-width : 370px) {
+@media (max-width : 390px) {
     html{
-        font-size: 30%;
+        font-size: 29%;
     }
     
     @keyframes arrow-icon {
@@ -759,8 +792,10 @@ p{
         100%{
             transform: translateY(-5px)
         }
-    
     }
+    
+    
+
 }
 /* 260px */
 @media (max-width : 260px) {
@@ -771,12 +806,7 @@ p{
 /* 200px */
 @media (max-width : 200px) {
     html{
-        font-size: 15%;
-    }
-}
-/* 120px */
-@media (max-width : 120px) {
-    html{
         font-size: 10%;
     }
 }
+
