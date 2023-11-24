@@ -734,12 +734,6 @@ p{
     .section-footer .grid-four-column{
         grid-template-columns: 1fr 1fr;
     }
-    .footer-about ,.footer-links , .footer-service ,.footer-question{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
     .f-tail{
         margin-top: -10%;
     }
