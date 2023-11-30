@@ -514,6 +514,7 @@ p{
 }
 .footer-tail p , .footer-about p{
     color: var(--white);
+    text-align: center;
 }
 .section-footer a:hover,
 .section-footer a:active,
