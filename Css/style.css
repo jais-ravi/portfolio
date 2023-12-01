@@ -612,6 +612,9 @@ p{
     .section-services .grid-four-column{
         grid-template-columns: 1fr 1fr;
     }
+    .section-services .grid{
+        gap: 4rem;
+    }
 }
 /* 1000px */
 @media (max-width: 1000px) {
