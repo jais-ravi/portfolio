@@ -492,6 +492,10 @@ p{
     gap: 2rem;
     justify-content: center;
 }
+.footer-about p{
+    color: var(--white);
+
+}
 .footer-links ul , 
 .footer-service ul, .footer-question address  {
     font-size: 1.7rem;
@@ -512,7 +516,7 @@ p{
     background-color: transparent;
     border: solid var(--white);
 }
-.footer-tail p , .footer-about p{
+.footer-tail p {
     color: var(--white);
     text-align: center;
 }
